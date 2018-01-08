@@ -1,0 +1,52 @@
+/* ==UserStyle==
+@name         SoundCloud Mod
+@namespace    https://github.com/synthtech
+@version      1.0.0
+@description  Makes it wide
+@author       synthtech (https://github.com/synthtech)
+@homepageURL  https://github.com/synthtech/usercss
+@supportURL   https://github.com/synthtech/usercss/issues
+@license      Unlicense
+==/UserStyle== */
+@-moz-document regexp("^https?:\/\/soundcloud\.com\/.*$") {
+    body {
+        background-size: cover !important;
+        padding-bottom: 0;
+    } 
+    #content, .l-container.l-fullwidth {
+        width: auto;
+    }
+    .l-fixed-top-one-column > .l-top {
+        width: 100%;
+    }
+    .dashbox {
+        display: none;
+    }
+    .usersList .usersList__item:first-of-type {
+        border-top: none;
+    }
+    .l-fluid-fixed .l-sidebar-right .l-footer {
+        padding-bottom: 0;
+    }
+    .l-fixed-width > .l-main {
+        padding: 0;
+    }
+    .header__logo {
+        background: #f50 !important;
+    }
+    .profileHeaderBackground__visual {
+        background-size: cover;
+    }
+    .dropbar.m-fullWidth {
+        width: 100%;
+    }
+    .sidebarModule.mobileApps {
+        display: none;
+    }
+    .streamHTUpsell {
+        display: none;
+    }
+    body > canvas {
+        display: none;
+    }
+}
