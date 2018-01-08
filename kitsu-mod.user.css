@@ -1,0 +1,54 @@
+/* ==UserStyle==
+@name         Kitsu Mod
+@namespace    https://github.com/synthtech
+@version      1.0.0
+@description  Tweaks for Kitsu
+@author       synthtech (https://github.com/synthtech)
+@homepageURL  https://github.com/synthtech/usercss
+@supportURL   https://github.com/synthtech/usercss/issues
+@license      Unlicense
+==/UserStyle== */
+@-moz-document regexp("^https?:\/\/kitsu\.io\/.*$") {
+    .stream-item-options > a {
+        display: none;
+    }
+    .active.button:focus, .active.focus.button, .btn.active.focus, .btn.active:focus, .btn.focus,
+    .btn:active.focus, .btn:active:focus, .btn:focus, .button:active.focus, .button:active:focus,
+    .button:focus, .focus.button {
+        outline: none;
+    }
+    .kitsu-ad {
+        display: none;
+    }
+    .spoiler-gate a::after {
+        content: "(⊙w⊙)";
+    }
+    .spoiler-gate a:hover::after {
+        content: "(◕w◕)";
+    }
+    .combo-gate a::before {
+        content: "(⊙w⊙)";
+    }
+    .combo-gate a:hover::before {
+        content: "(◕w◕)";
+    }
+    body.rails_admin #list > #bulk_form > div:first-of-type {
+        border-left: 1px dashed dimgrey !important;
+    }
+    .quick-update-enabled .feed-sidebar {
+        max-width: 25%;
+        width: auto;
+    }
+    .quick-update-enabled .feed-stream {
+        min-width: 540px;
+        max-width: 56%;
+        width: auto;
+    }
+    .embedly-card {
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .media--sidebar ul {
+        font-size: 13px;
+    }
+}
