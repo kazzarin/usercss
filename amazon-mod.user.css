@@ -1,0 +1,66 @@
+/* ==UserStyle==
+@name         Amazon Mod
+@namespace    https://github.com/synthtech
+@version      1.0.0
+@description  Tweaks for Amazon
+@author       synthtech (https://github.com/synthtech)
+@homepageURL  https://github.com/synthtech/usercss
+@supportURL   https://github.com/synthtech/usercss/issues
+@license      Unlicense
+==/UserStyle== */
+@-moz-document regexp("^https?:\/\/www\.amazon\.[a-z]{2,3}(\.[a-z]{2,3})?\/.*$") {
+    #sims-fbt {
+        display: none;
+    }
+    #rightRail {
+        display: none;
+    }
+    #view_to_purchase-sims-feature {
+        display: none;
+    }
+    .sims-vtp-heading {
+        display: none;
+    }
+    .vtp-footer {
+        display: none;
+    }
+    #extraProductInfoFeatureGroup {
+        display: none;
+    }
+    #kcpAppsPopOver {
+        display: none;
+    }
+    div[name="goKindleStaticPopDiv"] {
+        display: none;
+    }
+    #tellAFriendBylineBox_feature_div {
+        display: none;
+    }
+    #nav-belt > .nav-right {
+        display: none;
+    }
+    #kcpApp_feature_div {
+        display: none;
+    }
+    #productAlert_feature_div {
+        display: none;
+    }
+    #hqpWrapper {
+        display: none;
+    }
+    #tellAFriendBox_feature_div {
+        display: none;
+    }
+    #sc-new-upsell {
+        display: none;
+    }
+    #sc-rec-right {
+        display: none;
+    }
+    #sc-rec-bottom {
+        display: none;
+    }
+    #smTabCDiv {
+        display: none;
+    }
+}
