@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name         Nyaa Mod
 @namespace    https://github.com/synthtech
-@version      1.0.0
+@version      1.0.1
 @description  Dark mode adjustments
 @author       synthtech (https://github.com/synthtech)
 @homepageURL  https://github.com/synthtech/usercss
@@ -54,6 +54,9 @@
         position: fixed;
         width: 100%;
         top: 0;
+    }
+    body > .container > .servers-cost-money1 {
+        display: none;
     }
 }
 @-moz-document domain("sukebei.nyaa.si") {
