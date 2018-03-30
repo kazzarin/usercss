@@ -1,0 +1,15 @@
+/* ==UserStyle==
+@name         Slack Hangouts Emoji
+@namespace    https://github.com/synthtech
+@version      1.0.0
+@description  Restores the old Hangouts emoji
+@author       synthtech (https://github.com/synthtech)
+@homepageURL  https://github.com/synthtech/usercss
+@supportURL   https://github.com/synthtech/usercss/issues
+@license      Unlicense
+==/UserStyle== */
+@-moz-document regexp("^https?:\/\/[^.]+\.slack\.com\/.*$") {
+    .emoji-outer, .emoji[style*="sheet_google_64_indexed_256.png"] {
+        background-image: url("https://cdn.rawgit.com/stolksdorf/old-slack-emojis/74299ce54d8f9dde2190b5522e889d111aac6336/blob_sprite_64.png") !important;
+    }
+}
