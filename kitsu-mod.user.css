@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name         Kitsu Mod
 @namespace    https://github.com/synthtech
-@version      1.0.0
+@version      1.0.1
 @description  Tweaks for Kitsu
 @author       synthtech (https://github.com/synthtech)
 @homepageURL  https://github.com/synthtech/usercss
@@ -50,5 +50,8 @@
     }
     .media--sidebar ul {
         font-size: 13px;
+    }
+    .media--feed {
+        max-width: none;
     }
 }
