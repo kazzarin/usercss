@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name         Kitsu Mod
 @namespace    https://github.com/synthtech
-@version      1.0.1
+@version      1.0.2
 @description  Tweaks for Kitsu
 @author       synthtech (https://github.com/synthtech)
 @homepageURL  https://github.com/synthtech/usercss
@@ -52,5 +52,20 @@
     }
     .footer-applinks {
         margin-top: 20px;
+    }
+    .unit-summary .thumbnail-wrapper img {
+        height: 100px;
+    }
+    .unit-synopsis {
+        padding-top: 0;
+    }
+    .unit-thumbnail {
+        padding: 0 0 10px 0;
+    }
+    .media-unit--block.complete:hover img {
+        filter: none;
+    }
+    .va .lazy-image, .va img {
+        object-fit: cover;
     }
 }
