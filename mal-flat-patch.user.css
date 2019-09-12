@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name         MAL Flat Patch
 @namespace    https://github.com/synthtech
-@version      1.0.0
+@version      1.0.1
 @description  Used in conjunction with the MAL Flat userstyle (https://userstyles.org/styles/97244/mal-flat)
 @author       synthtech (https://github.com/synthtech)
 @homepageURL  https://github.com/synthtech/usercss
@@ -58,7 +58,7 @@
     .watch-anime-slide-block .watch-anime-slide-outer {
         width: auto;
     }
-    .widget-slide-block .widget-slide-outer {
+    .widget-slide-block:not(#widget-manga-store) .widget-slide-outer {
         width: auto;
     }
     #widget-episode-video .widget-slide-outer {
@@ -66,12 +66,6 @@
     }
     #widget-episode-video {
         width: 100%;
-    }
-    .anime-slide-block {
-        width: 1266px !important;
-    }
-    .anime-slide-block .anime-slide-outer {
-        width: inherit !important;
     }
     .detail-characters-list .left-column.divider {
         width: 49% !important;
@@ -86,6 +80,18 @@
     }
     .fa {
         font-family: FontAwesome !important;
+    }
+    .page-common .mal-side-ad {
+        display: none !important;
+    }
+    .mal-ad-unit {
+        display: none !important;
+    }
+    .page-common iframe.fb-page {
+        display: none;
+    }
+    .btn-mal-service {
+        display: none !important;
     }
 }
 @-moz-document domain("cdn.myanimelist.net"), regexp("https?://myanimelist.net/images/.*") {
