@@ -1,11 +1,12 @@
 /* ==UserStyle==
-@name           MAL Flat
-@namespace      USO Archive
-@author         Metric
-@description    `MyAnimeList - MAL FlatA very clean and minimal theme for Myanimelist. Most of the theme consists of Flat Styles / Colors with some clean tweaks and additions.`
-@version        2016429.14.4
-@license        CC-BY-NC-SA-4.0
-@preprocessor   uso
+@name         MAL Flat
+@namespace    https://github.com/synthtech
+@version      1.1.0
+@description  A flat and minimal theme for MyAnimeList.
+@author       Metric, synthtech (https://github.com/synthtech)
+@homepageURL  https://github.com/synthtech/usercss
+@supportURL   https://github.com/synthtech/usercss/issues
+@license      CC-BY-NC-SA-4.0
 ==/UserStyle== */
 @-moz-document regexp(".*myanimelist\\.net/(?!animelist|mangalist).*") {
     body {
