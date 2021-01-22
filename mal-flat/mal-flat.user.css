@@ -27,26 +27,10 @@
         position: relative;
     }
     
-    #header {
-          margin-top: 20px;
-        height: 65px !important;
-        background: url(https://googledrive.com/host/0B-3fvi8F9ojxdUoweFdrUXhqOG8) #f8f8f8 no-repeat !important;
-    }
-    
-    #header a {
-        text-indent: -5000em;
-        width: 400px;
-        height: 60px;
-        display: block;
-    }
-    
-    /* Default Logo Large */
-    /* https://googledrive.com/host/0B-3fvi8F9ojxdUoweFdrUXhqOG8 */
-    
     #headerSmall {
         height: 58px !important;
-        background: transparent url(http://i.imgur.com/2ZnJmII.png) no-repeat !important;
-          margin-top: 5px;
+        background: transparent url(https://i.imgur.com/2ZnJmII.png) no-repeat !important;
+        margin-top: 5px;
         padding-bottom: 0px !important;
         top: 10px !important;
     }
@@ -401,13 +385,6 @@
     
     * html #nav ul {
         margin: 0px;
-    }
-    
-    #header_nonav
-    {
-        height: 34px;
-        width: 100%;
-        background: #2e51a2 url(http://cdn.myanimelist.net/images/mal-logo.gif) no-repeat top left;
     }
     
     #searchBar {
@@ -1281,36 +1258,6 @@
     td.normal_header:last-of-type { border-radius: 0px 5px 0px 0px !important; }
     
     .forum_boardrow1 { padding: 6px !important; }
-    
-    #forum_options_container ul li {
-          background: url(https://googledrive.com/host/0B-3fvi8F9ojxOWxoa1hpejU4UWc) repeat-x top right !important;
-        height: 25px !important; 
-        border: 1px solid #E3E6EB !important;
-        color: #385491 !important;
-        margin-right: -4px;
-        padding-left: 8px !important;
-        padding-right: 8px !important;
-    }
-    
-    #forum_options_container ul li:hover {
-          background: #ECEEF4 !important;
-        height: 25px !important;
-        border: 1px solid #E3E6EB !important;
-        color: #385491 !important;
-        margin-right: -4px;
-        padding-left: 8px !important;
-        padding-right: 8px !important;
-    }
-    
-    #forum_options_container ul li a:hover { text-decoration: none !important; }
-    
-    #topSearchValue {
-          -webkit-appearance: none;
-        -moz-appearance: none;
-        appearance: none;
-        background: #354E8E url("https://googledrive.com/host/0B-3fvi8F9ojxbDFzdGxtMzAyYWc") no-repeat right center;
-            width: 110px;
-    }
     
     #rightcontentunder {
         background: none !important;    
