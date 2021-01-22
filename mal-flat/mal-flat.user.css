@@ -2055,7 +2055,7 @@
         font-family: 'Segoe UI', sans-serif !important;
     }
     .page-common #myanimelist {
-        width: 85%;
+        width: 70%;
     }
     .page-common #menu {
         width: 100% !important;
@@ -2064,10 +2064,10 @@
         width: 100% !important;
     }
     .page-common .footer-ranking {
-        width: 85% !important;
+        width: 70% !important;
     }
     .page-common #footer-block {
-        width: 85%;
+        width: 70%;
     }
     .seasonal-anime-slide-block .seasonal-anime-slide-outer {
         width: auto;
