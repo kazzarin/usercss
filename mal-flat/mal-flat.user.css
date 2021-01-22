@@ -8,7 +8,7 @@
 @supportURL   https://github.com/synthtech/usercss/issues
 @license      CC-BY-NC-SA-4.0
 ==/UserStyle== */
-@-moz-document regexp(".*myanimelist\\.net/(?!animelist|mangalist).*") {
+@-moz-document regexp("^https?:\/\/myanimelist\.net\/(?!animelist|mangalist|images\/).*(?!\.json)$") {
     body {
         margin: 0;
         text-align: center;
@@ -2367,17 +2367,5 @@
     }
     .btn-mal-service {
         display: none !important;
-    }
-}
-@-moz-document domain("cdn.myanimelist.net"), regexp("https?://myanimelist.net/images/.*") {
-    body {
-        text-align: initial;
-    }
-}
-@-moz-document regexp("https?://myanimelist.net/search/prefix.json") {
-    body {
-        margin: initial;
-        text-align: initial;
-        font-size: initial;
     }
 }
