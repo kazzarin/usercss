@@ -2,7 +2,7 @@
 @name         Amazon Mod
 @namespace    https://github.com/synthtech
 @version      1.0.0
-@description  Tweaks for Amazon
+@description  Hide some stuff
 @author       synthtech (https://github.com/synthtech)
 @homepageURL  https://github.com/synthtech/usercss
 @supportURL   https://github.com/synthtech/usercss/issues
@@ -11,6 +11,9 @@
 @-moz-document regexp("^https?:\/\/www\.amazon\.[a-z]{2,3}(\.[a-z]{2,3})?\/.*$") {
     #sims-fbt {
         display: none;
+    }
+    #desktop-dp-sims_session-similarities-sims-feature > .a-carousel-container {
+        overflow: visible;
     }
     #rightRail {
         display: none;
@@ -36,9 +39,6 @@
     #tellAFriendBylineBox_feature_div {
         display: none;
     }
-    #nav-belt > .nav-right {
-        display: none;
-    }
     #kcpApp_feature_div {
         display: none;
     }
@@ -61,6 +61,12 @@
         display: none;
     }
     #smTabCDiv {
+        display: none;
+    }
+    #issuancePriceblockAmabot_feature_div {
+        display: none;
+    }
+    #promotions_feature_div {
         display: none;
     }
 }
