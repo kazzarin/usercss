@@ -1,0 +1,55 @@
+/* ==UserStyle==
+@name         Anilist Mod
+@namespace    https://github.com/synthtech
+@version      1.0.0
+@description  Custom stuff
+@author       synthtech (https://github.com/synthtech)
+@homepageURL  https://github.com/synthtech/usercss
+@supportURL   https://github.com/synthtech/usercss/issues
+@license      Unlicense
+==/UserStyle== */
+@-moz-document regexp("^https?:\/\/anilist\.co\/(?!user\/).*$") {
+    /* global custom colour */
+    /*:root {
+        --color-blue: 57, 191, 121;
+        --color-blue-dim: 78.14999999999999, 171.95, 122.94999999999999;
+    }*/
+}
+@-moz-document domain("anilist.co") {
+    .progress[data-v-5d42c114] {
+        background-color: rgb(var(--color-blue));
+    }
+    .status.pending {
+        background: rgb(61, 180, 242) !important;
+    }
+    .favourites .favourite.studio {
+        background-color: unset;
+    }
+
+    /* home sidebar */
+    .home .list-preview-wrap:nth-child(2), /* anime list */
+    .home .list-preview-wrap:nth-child(3), /* manga list */
+    .home .recent-threads,
+    .home .recent-reviews,
+    .home > div:nth-of-type(2) > div:nth-of-type(4) > div:first-of-type { /* trending */
+        display: none;
+    }
+
+    /* larger feed activites */
+    .activity-feed[data-v-09492909] {
+        grid-template-columns: 1fr;
+    }
+    .list.small[data-v-6c3dc0b8] {
+        grid-template-columns: 100px auto;
+        min-height: 150px;
+    }
+    .full-width[data-v-6c3dc0b8] {
+        grid-column-start: unset;
+        grid-column-end: unset;
+    }
+    .activity-feed .activity-message[data-v-09492909],
+    .activity-feed .activity-text[data-v-09492909] {
+        grid-column-start: unset;
+        grid-column-end: unset;
+    }
+}
