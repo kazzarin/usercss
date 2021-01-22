@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name         Amazon Mod
 @namespace    https://github.com/synthtech
-@version      1.0.0
+@version      1.1.0
 @description  Hide some stuff
 @author       synthtech (https://github.com/synthtech)
 @homepageURL  https://github.com/synthtech/usercss
@@ -9,64 +9,28 @@
 @license      Unlicense
 ==/UserStyle== */
 @-moz-document regexp("^https?:\/\/www\.amazon\.[a-z]{2,3}(\.[a-z]{2,3})?\/.*$") {
-    #sims-fbt {
-        display: none;
-    }
     #desktop-dp-sims_session-similarities-sims-feature > .a-carousel-container {
         overflow: visible;
     }
-    #rightRail {
-        display: none;
-    }
-    #view_to_purchase-sims-feature {
-        display: none;
-    }
-    .sims-vtp-heading {
-        display: none;
-    }
-    .vtp-footer {
-        display: none;
-    }
-    #extraProductInfoFeatureGroup {
-        display: none;
-    }
-    #kcpAppsPopOver {
-        display: none;
-    }
-    div[name="goKindleStaticPopDiv"] {
-        display: none;
-    }
-    #tellAFriendBylineBox_feature_div {
-        display: none;
-    }
-    #kcpApp_feature_div {
-        display: none;
-    }
-    #productAlert_feature_div {
-        display: none;
-    }
-    #hqpWrapper {
-        display: none;
-    }
-    #tellAFriendBox_feature_div {
-        display: none;
-    }
-    #sc-new-upsell {
-        display: none;
-    }
-    #sc-rec-right {
-        display: none;
-    }
-    #sc-rec-bottom {
-        display: none;
-    }
-    #smTabCDiv {
-        display: none;
-    }
-    #issuancePriceblockAmabot_feature_div {
-        display: none;
-    }
+    #sims-fbt,
+    #rightRail,
+    #view_to_purchase-sims-feature,
+    .sims-vtp-heading,
+    .vtp-footer,
+    #extraProductInfoFeatureGroup,
+    #kcpAppsPopOver,
+    div[name="goKindleStaticPopDiv"],
+    #tellAFriendBylineBox_feature_div,
+    #kcpApp_feature_div,
+    #productAlert_feature_div,
+    #hqpWrapper,
+    #tellAFriendBox_feature_div,
+    #sc-new-upsell,
+    #sc-rec-right,
+    #sc-rec-bottom,
+    #smTabCDiv,
+    #issuancePriceblockAmabot_feature_div,
     #promotions_feature_div {
-        display: none;
+        display: none !important;
     }
 }
