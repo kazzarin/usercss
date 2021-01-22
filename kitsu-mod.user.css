@@ -1,14 +1,14 @@
 /* ==UserStyle==
 @name         Kitsu Mod
 @namespace    https://github.com/synthtech
-@version      1.0.2
+@version      1.0.3
 @description  Tweaks for Kitsu
 @author       synthtech (https://github.com/synthtech)
 @homepageURL  https://github.com/synthtech/usercss
 @supportURL   https://github.com/synthtech/usercss/issues
 @license      Unlicense
 ==/UserStyle== */
-@-moz-document regexp("^https?:\/\/kitsu\.io\/.*$") {
+@-moz-document regexp("^https?:\/\/(.*\.)?kitsu\.io\/.*$") {
     .stream-item-options > a {
         display: none;
     }
@@ -20,29 +20,8 @@
     .kitsu-ad {
         display: none;
     }
-    .spoiler-gate a::after {
-        content: "(⊙w⊙)";
-    }
-    .spoiler-gate a:hover::after {
-        content: "(◕w◕)";
-    }
-    .combo-gate a::before {
-        content: "(⊙w⊙)";
-    }
-    .combo-gate a:hover::before {
-        content: "(◕w◕)";
-    }
     body.rails_admin #list > #bulk_form > div:first-of-type {
         border-left: 1px dashed dimgrey !important;
-    }
-    .quick-update-enabled .feed-sidebar {
-        max-width: 25%;
-        width: auto;
-    }
-    .quick-update-enabled .feed-stream {
-        min-width: 540px;
-        max-width: 56%;
-        width: auto;
     }
     .media--sidebar ul {
         font-size: 13px;
@@ -67,5 +46,8 @@
     }
     .va .lazy-image, .va img {
         object-fit: cover;
+    }
+    body.rails_admin .sidebar-nav {
+        z-index: 10;
     }
 }
