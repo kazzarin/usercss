@@ -9,13 +9,19 @@
 @license      CC-BY-NC-SA-4.0
 ==/UserStyle== */
 @-moz-document regexp("^https?:\/\/myanimelist\.net\/(?!animelist|mangalist|images\/).*(?!\.json)$") {
+    * {
+        font-family: 'Segoe UI', sans-serif !important;
+    }
+    .fa {
+        font-family: FontAwesome !important;
+    }
     body {
         margin: 0;
         text-align: center;
-        font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif !important;
         font-size: 11px;
           background: #f8f8f8 repeat !important;
     }
+
     
     #myanimelist {
         width: 1060px;
@@ -318,7 +324,6 @@
         padding-right: 5px !important;
         border-radius: 3px;
         margin-right: 2px;
-        font-family: Calibri, sans-serif !important;
         transition: border-bottom 0.5s;
     }
     
@@ -342,9 +347,7 @@
         border-bottom: 3px solid #E3E6EB !important;
         color: #363636 !important;
         transition: color 0.5s, border-bottom 0.5s;
-        
         font-size: 11px !important;
-        font-family: Calibri, sans-serif !important;
         border-radius: 3px !important;
     }
     
@@ -461,7 +464,6 @@
     #rightcontent
     {
         width: 792px;
-        font-family: Verdana, Arial;
         font-size: 11px;
         padding: 7px;
         border-left: solid 1px #ebebeb;
@@ -472,7 +474,6 @@
     #rightcontent_nopad
     {
         width: 806px;
-        font-family: Verdana, Arial;
         font-size: 11px;
         padding-top: 5px;
         border-left: solid 1px #ebebeb;
@@ -483,7 +484,6 @@
     #rightcontent_nopadall
     {
         width: 806px;
-        font-family: Verdana, Arial;
         font-size: 11px;
         padding: 0;
         border-left: solid 1px #ebebeb;
@@ -494,7 +494,6 @@
     #rightcontent_largepad
     {
         width: 766px;
-        font-family: Verdana, Arial;
         font-size: 11px;
         padding: 7px 20px 7px 20px;
         border-left: solid 1px #ebebeb;
@@ -510,7 +509,6 @@
     
     #rightcontentunder
     {
-        font-family: Verdana, Arial;
         font-size: 11px;
         padding: 10px;
         text-align: center;
@@ -524,7 +522,6 @@
         border-color: #d8d8d8;
         border-style: solid;
         font-size: 11px;
-        font-family: "lucida grande", tahoma, verdana, arial, sans-serif;
     }
     
     .textarea
@@ -534,7 +531,6 @@
         border-color: #d8d8d8;
         border-style: solid;
         font-size: 11px;
-        font-family: "lucida grande", tahoma, verdana, arial, sans-serif;
     }
     
     
@@ -601,7 +597,6 @@
     
     h1, .page-common .h1
     {
-        font-family: Calibri, sans-serif !important;
         text-align: left;
         color: #fff !important;
         font-size: 13px !important;
@@ -1274,7 +1269,6 @@
         transition: border-bottom 0.5s, color 0.5s;
         
         font-size: 11px !important;
-        font-family: Calibri, sans-serif !important;
     }
     
     .btn-type.js-btn-seasonal {
@@ -1284,7 +1278,6 @@
         color: #363636 !important;
         transition: border-bottom 0.5s, color 0.5s;
         font-size: 11px !important;
-        font-family: Calibri, sans-serif !important;
         border-radius: 3px !important;
     }
     
@@ -1366,13 +1359,14 @@
         padding: 2px 6px !important;
         border-radius: 3px !important;
         cursor: pointer !important;
-        font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif !important;
         transition: border-bottom 0.5s, color 0.5s;
     }
-    
     .inputButton:hover {
         border-bottom-color: #3498DB !important;
         color: #3498DB !important;
+    }
+    .anime-search-form-block .anime-search-form-search .inputButton {
+        font-family: FontAwesome !important;
     }
     
     span#addtolistresult {
@@ -1986,7 +1980,6 @@
         font-size: 13px !important;
         line-height: 22px !important;
         font-weight: normal !important;
-        font-family: Calibri, sans-serif !important;
         color: #fff !important;
     }
     
@@ -2026,12 +2019,6 @@
     }
     
     /* new */
-    * {
-        font-family: 'Segoe UI', sans-serif !important;
-    }
-    .anime-search-form-block .anime-search-form-search .inputButton {
-        font-family: FontAwesome !important;
-    }
     .news-list .news-unit .image-link,
     .news-list .news-unit .image-link .image {
         width: inherit !important;
@@ -2050,9 +2037,6 @@
     }
     .page-common #horiznav_nav ul li {
         display: inline-block;
-    }
-    h1, .page-common .h1 {
-        font-family: 'Segoe UI', sans-serif !important;
     }
     .page-common #myanimelist {
         width: 70%;
@@ -2094,9 +2078,6 @@
         width: 0 !important;
         height: 0 !important;
         visibility: hidden;
-    }
-    .fa {
-        font-family: FontAwesome !important;
     }
     .page-common .mal-side-ad {
         display: none !important;
