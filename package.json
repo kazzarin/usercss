@@ -1,0 +1,19 @@
+{
+  "name": "usercss",
+  "version": "1.0.0",
+  "description": "",
+  "license": "Unlicense",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/synthtech/usercss.git"
+  },
+  "homepage": "https://github.com/synthtech/usercss",
+  "scripts": {
+    "test": "stylelint **/*.css"
+  },
+  "devDependencies": {
+    "stylelint": "^13.9.0",
+    "stylelint-config-standard": "^20.0.0"
+  }
+}
