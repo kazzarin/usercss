@@ -7,7 +7,7 @@ on:
     branches: [ master ]
 
 jobs:
-  build:
+  test:
     runs-on: ubuntu-latest
 
     steps:
@@ -15,7 +15,7 @@ jobs:
     - uses: actions/setup-node@v2
       with:
         node-version: '15.x'
-    - uses: pnpm/action-setup@v1.2.0
+    - uses: pnpm/action-setup@v1.2.1
       with:
         version: 5.15.3
         run_install: true
