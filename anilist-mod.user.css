@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name         Anilist Mod
 @namespace    https://github.com/synthtech
-@version      1.0.0
+@version      1.0.1
 @description  Custom stuff
 @author       synthtech (https://github.com/synthtech)
 @homepageURL  https://github.com/synthtech/usercss
@@ -31,11 +31,11 @@
     .home .list-preview-wrap:nth-child(3), /* manga list */
     .home .recent-threads,
     .home .recent-reviews,
-    .home > div:nth-of-type(2) > div:nth-of-type(4) > div:first-of-type { /* trending */
+    .home .recent-reviews + div > div:first-of-type { /* trending */
         display: none;
     }
 
-    /* larger feed activites */
+    /* larger profile feed activites */
     .activity-feed[data-v-09492909] {
         grid-template-columns: 1fr;
     }
@@ -51,5 +51,15 @@
     .activity-feed .activity-text[data-v-09492909] {
         grid-column-start: unset;
         grid-column-end: unset;
+    }
+    /* larger home feed activites */
+    .list[data-v-6c3dc0b8] {
+        grid-template-columns: 100px auto;
+        min-height: 150px;
+    }
+    .list .details[data-v-6c3dc0b8] {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
     }
 }
