@@ -626,7 +626,7 @@
         width: auto;
     }
     .page-common .h1.edit-info div.h1-title h1 {
-        display: inherit;
+        display: inline-block;
         padding: 0;
     }
     .page-common .h1.edit-info div.header-right {
