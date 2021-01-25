@@ -10,7 +10,7 @@
   },
   "homepage": "https://github.com/synthtech/usercss",
   "scripts": {
-    "test": "stylelint **/*.css"
+    "test": "stylelint \"**/*.css\""
   },
   "devDependencies": {
     "stylelint": "^13.9.0",
