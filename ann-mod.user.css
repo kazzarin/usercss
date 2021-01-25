@@ -9,7 +9,8 @@
 @license      Unlicense
 ==/UserStyle== */
 @-moz-document domain("animenewsnetwork.com") {
-    #canvas > div, #main {
+    #canvas > div,
+    #main {
         width: 1280px !important;
         margin: auto !important;
     }

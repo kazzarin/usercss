@@ -12,8 +12,9 @@
     body {
         background-size: cover !important;
         padding-bottom: 0;
-    } 
-    #content, .l-container.l-fullwidth {
+    }
+    #content,
+    .l-container.l-fullwidth {
         width: auto;
     }
     .l-fixed-top-one-column > .l-top {

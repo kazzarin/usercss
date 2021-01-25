@@ -12,9 +12,18 @@
     .stream-item-options > a {
         display: none;
     }
-    .active.button:focus, .active.focus.button, .btn.active.focus, .btn.active:focus, .btn.focus,
-    .btn:active.focus, .btn:active:focus, .btn:focus, .button:active.focus, .button:active:focus,
-    .button:focus, .focus.button {
+    .active.button:focus,
+    .active.focus.button,
+    .btn.active.focus,
+    .btn.active:focus,
+    .btn.focus,
+    .btn:active.focus,
+    .btn:active:focus,
+    .btn:focus,
+    .button:active.focus,
+    .button:active:focus,
+    .button:focus,
+    .focus.button {
         outline: none;
     }
     .kitsu-ad {
@@ -44,7 +53,8 @@
     .media-unit--block.complete:hover img {
         filter: none;
     }
-    .va .lazy-image, .va img {
+    .va .lazy-image,
+    .va img {
         object-fit: cover;
     }
     body.rails_admin .sidebar-nav {
