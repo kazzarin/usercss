@@ -7,6 +7,7 @@
 @homepageURL  https://github.com/synthtech/usercss
 @supportURL   https://github.com/synthtech/usercss/issues
 @license      Unlicense
+@preprocessor less
 ==/UserStyle== */
 @-moz-document domain("anilist.co") {
     #app .progress {
@@ -19,44 +20,41 @@
         background-color: unset;
     }
     /* home sidebar */
-    .home .list-preview-wrap:nth-child(2), /* manga list */
-    .home .recent-threads,
-    .home .recent-reviews,
-    .home .recent-reviews + div > div:first-of-type { /* trending */
-        display: none;
+    .home {
+        .list-preview-wrap:nth-child(2), /* manga list */
+        .recent-threads,
+        .recent-reviews,
+        .recent-reviews + div > div:first-of-type { /* trending */
+            display: none;
+        }
     }
     /* larger profile feed activites */
     .user .activity-feed {
         grid-template-columns: 1fr;
-    }
-    .user .activity-feed .list.small {
-        grid-template-columns: 100px auto;
-        min-height: 150px;
-    }
-    .user .activity-feed .full-width {
-        grid-column-start: unset;
-        grid-column-end: unset;
-    }
-    .user .activity-feed .activity-message,
-    .user .activity-feed .activity-text {
-        grid-column-start: unset;
-        grid-column-end: unset;
+        .list.small {
+            grid-template-columns: 100px auto;
+            min-height: 150px;
+        }
+        .activity-message,
+        .activity-text,
+        .full-width {
+            grid-column-start: unset;
+            grid-column-end: unset;
+        }
     }
     /* larger home/media feed activites */
     .home .activity-feed .list,
     .media .activity-feed .list {
         grid-template-columns: 100px auto;
         min-height: 150px;
-    }
-    .home .activity-feed .list .details,
-    .media .activity-feed .list .details {
-        margin: auto 0;
-    }
-    .home .activity-feed .list .donator-badge,
-    .media .activity-feed .list .donator-badge {
-        position: unset;
-        vertical-align: middle;
-        margin-top: -3px;
+        .details {
+            margin: auto 0;
+        }
+        .donator-badge {
+            position: unset;
+            vertical-align: middle;
+            margin-top: -3px;
+        }
     }
     /* always visible list counts */
     .medialist .filters .filter-group .count {
