@@ -9,7 +9,7 @@
 @license      Unlicense
 ==/UserStyle== */
 @-moz-document domain("anilist.co") {
-    .progress[data-v-5d42c114] {
+    #app .progress {
         background-color: rgb(var(--color-blue));
     }
     .status.pending {
@@ -26,37 +26,40 @@
         display: none;
     }
     /* larger profile feed activites */
-    .activity-feed[data-v-09492909] {
+    .user .activity-feed {
         grid-template-columns: 1fr;
     }
-    .list.small[data-v-6c3dc0b8] {
+    .user .activity-feed .list.small {
         grid-template-columns: 100px auto;
         min-height: 150px;
     }
-    .full-width[data-v-6c3dc0b8] {
+    .user .activity-feed .full-width {
         grid-column-start: unset;
         grid-column-end: unset;
     }
-    .activity-feed .activity-message[data-v-09492909],
-    .activity-feed .activity-text[data-v-09492909] {
+    .user .activity-feed .activity-message,
+    .user .activity-feed .activity-text {
         grid-column-start: unset;
         grid-column-end: unset;
     }
     /* larger home/media feed activites */
-    .list[data-v-6c3dc0b8] {
+    .home .activity-feed .list,
+    .media .activity-feed .list {
         grid-template-columns: 100px auto;
         min-height: 150px;
     }
-    .list .details[data-v-6c3dc0b8] {
+    .home .activity-feed .list .details,
+    .media .activity-feed .list .details {
         margin: auto 0;
     }
-    .list .donator-badge[data-v-6c3dc0b8] {
+    .home .activity-feed .list .donator-badge,
+    .media .activity-feed .list .donator-badge {
         position: unset;
         vertical-align: middle;
         margin-top: -3px;
     }
     /* always visible list counts */
-    .filter-group .count[data-v-063397cc] {
+    .medialist .filters .filter-group .count {
         opacity: 0.9;
     }
 }
