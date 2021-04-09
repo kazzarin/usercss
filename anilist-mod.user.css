@@ -2,19 +2,12 @@
 @name         Anilist Mod
 @namespace    https://github.com/synthtech
 @version      1.0.2
-@description  Custom stuff
+@description  Personal changes for Anilist
 @author       synthtech (https://github.com/synthtech)
 @homepageURL  https://github.com/synthtech/usercss
 @supportURL   https://github.com/synthtech/usercss/issues
 @license      Unlicense
 ==/UserStyle== */
-@-moz-document regexp("^https?:\/\/anilist\.co\/(?!user\/).*$") {
-    /* global custom colour */
-    /*:root {
-        --color-blue: 57, 191, 121;
-        --color-blue-dim: 78.14999999999999, 171.95, 122.94999999999999;
-    }*/
-}
 @-moz-document domain("anilist.co") {
     .progress[data-v-5d42c114] {
         background-color: rgb(var(--color-blue));
@@ -26,8 +19,7 @@
         background-color: unset;
     }
     /* home sidebar */
-    .home .list-preview-wrap:nth-child(2), /* anime list */
-    .home .list-preview-wrap:nth-child(3), /* manga list */
+    .home .list-preview-wrap:nth-child(2), /* manga list */
     .home .recent-threads,
     .home .recent-reviews,
     .home .recent-reviews + div > div:first-of-type { /* trending */
@@ -62,5 +54,9 @@
         position: unset;
         vertical-align: middle;
         margin-top: -3px;
+    }
+    /* always visible list counts */
+    .filter-group .count[data-v-063397cc] {
+        opacity: 0.9;
     }
 }
