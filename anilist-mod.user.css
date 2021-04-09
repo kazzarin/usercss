@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name         Anilist Mod
 @namespace    https://github.com/synthtech
-@version      1.0.2
+@version      2.0
 @description  Personal changes for Anilist
 @author       synthtech (https://github.com/synthtech)
 @homepageURL  https://github.com/synthtech/usercss
@@ -10,7 +10,7 @@
 @preprocessor less
 ==/UserStyle== */
 @-moz-document domain("anilist.co") {
-    #app .progress {
+    #app > .progress {
         background-color: rgb(var(--color-blue));
     }
     .status.pending {
