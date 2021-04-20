@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name         Anilist Mod
 @namespace    https://github.com/synthtech
-@version      2.0.0
+@version      2.1.0
 @description  Personal changes for Anilist
 @author       synthtech (https://github.com/synthtech)
 @homepageURL  https://github.com/synthtech/usercss
@@ -59,5 +59,28 @@
     /* always visible list counts */
     .medialist .filters .filter-group .count {
         opacity: 0.9;
+    }
+    /* better card view for media lists */
+    .medialist.cards {
+        .list-section .list-entries {
+            grid-template-rows: repeat(auto-fill, 270px);
+        }
+        .entry-card {
+            display: grid;
+            grid-template-rows: 1fr auto;
+            height: 270px;
+            .cover {
+                position: relative;
+                .image {
+                    border-radius: 3px 3px 0 0;
+                }
+            }
+            .title {
+                position: relative;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+        }
     }
 }
