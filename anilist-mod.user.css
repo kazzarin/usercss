@@ -21,7 +21,7 @@
     }
     /* home sidebar */
     .home {
-        .list-preview-wrap:nth-child(2), /* manga list */
+        .list-preview-wrap:nth-child(n+2),
         .recent-threads,
         .recent-reviews,
         .recent-reviews + div > div:first-of-type { /* trending */
