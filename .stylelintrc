@@ -1,5 +1,5 @@
 extends: stylelint-config-standard
-
+customSyntax: postcss-less
 rules:
   at-rule-empty-line-before: null
   comment-empty-line-before: null
