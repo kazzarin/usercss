@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name         Anilist Mod
 @namespace    https://github.com/synthtech
-@version      2.1.1
+@version      2.1.2
 @description  Personal changes for Anilist
 @author       synthtech (https://github.com/synthtech)
 @homepageURL  https://github.com/synthtech/usercss
@@ -38,7 +38,7 @@
         .activity-message,
         .activity-text,
         .full-width {
-            grid-column: unset / unset;
+            grid-column: unset;
         }
     }
     /* larger home/media feed activites */
