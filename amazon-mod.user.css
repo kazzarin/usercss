@@ -1,14 +1,14 @@
 /* ==UserStyle==
 @name         Amazon Mod
 @namespace    https://github.com/synthtech
-@version      1.1.0
-@description  Hide some stuff
+@version      1.2.0
+@description  Hides promotional elements
 @author       synthtech (https://github.com/synthtech)
 @homepageURL  https://github.com/synthtech/usercss
 @supportURL   https://github.com/synthtech/usercss/issues
 @license      Unlicense
 ==/UserStyle== */
-@-moz-document regexp("^https?:\/\/www\.amazon\.[a-z]{2,3}(\.[a-z]{2,3})?\/.*$") {
+@-moz-document regexp("^https:\/\/www\.amazon\.[a-z]{2,3}(\.[a-z]{2,3})?\/.*$") {
     #desktop-dp-sims_session-similarities-sims-feature > .a-carousel-container {
         overflow: visible;
     }
@@ -30,7 +30,9 @@
     #sc-rec-bottom,
     #smTabCDiv,
     #issuancePriceblockAmabot_feature_div,
-    #promotions_feature_div {
+    #promotions_feature_div,
+    div[cel_widget_id="multi-card-creative-desktop_loom-desktop-top-slot_0"],
+    #universal-detail-ilm {
         display: none !important;
     }
 }

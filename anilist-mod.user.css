@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name         Anilist Mod
 @namespace    https://github.com/synthtech
-@version      2.1.0
+@version      2.1.1
 @description  Personal changes for Anilist
 @author       synthtech (https://github.com/synthtech)
 @homepageURL  https://github.com/synthtech/usercss
@@ -14,7 +14,7 @@
         background-color: rgb(var(--color-blue));
     }
     .status.pending {
-        background: rgb(61, 180, 242) !important;
+        background: rgb(61 180 242) !important;
     }
     .favourites .favourite.studio {
         background-color: unset;
@@ -38,8 +38,7 @@
         .activity-message,
         .activity-text,
         .full-width {
-            grid-column-start: unset;
-            grid-column-end: unset;
+            grid-column: unset / unset;
         }
     }
     /* larger home/media feed activites */
@@ -82,5 +81,9 @@
                 text-overflow: ellipsis;
             }
         }
+    }
+    /* studio fav btn */
+    .studio .favourite {
+        position: unset;
     }
 }

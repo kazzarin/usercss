@@ -1,54 +1,19 @@
 /* ==UserStyle==
 @name         Kitsu Mod
 @namespace    https://github.com/synthtech
-@version      1.0.3
+@version      1.1.0
 @description  Tweaks for Kitsu
 @author       synthtech (https://github.com/synthtech)
 @homepageURL  https://github.com/synthtech/usercss
 @supportURL   https://github.com/synthtech/usercss/issues
 @license      Unlicense
 ==/UserStyle== */
-@-moz-document regexp("^https?:\/\/(.*\.)?kitsu\.io\/.*$") {
-    .stream-item-options > a {
-        display: none;
-    }
-    .active.button:focus,
-    .active.focus.button,
-    .btn.active.focus,
-    .btn.active:focus,
-    .btn.focus,
-    .btn:active.focus,
-    .btn:active:focus,
-    .btn:focus,
-    .button:active.focus,
-    .button:active:focus,
-    .button:focus,
-    .focus.button {
-        outline: none;
-    }
-    .kitsu-ad {
-        display: none;
-    }
-    body.rails_admin #list > #bulk_form > div:first-of-type {
-        border-left: 1px dashed dimgrey !important;
-    }
+@-moz-document regexp("^https:\/\/(.*\.)?kitsu\.io\/.*$") {
     .media--sidebar ul {
         font-size: 13px;
     }
-    .media--feed {
-        max-width: none;
-    }
-    .footer-applinks {
-        margin-top: 20px;
-    }
     .unit-summary .thumbnail-wrapper img {
         height: 100px;
-    }
-    .unit-synopsis {
-        padding-top: 0;
-    }
-    .unit-thumbnail {
-        padding: 0 0 10px 0;
     }
     .media-unit--block.complete:hover img {
         filter: none;
@@ -59,5 +24,8 @@
     }
     body.rails_admin .sidebar-nav {
         z-index: 10;
+    }
+    body.rails_admin #list > #bulk_form > div:first-of-type {
+        border-left: 1px dashed dimgrey !important;
     }
 }
