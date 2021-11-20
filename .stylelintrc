@@ -7,3 +7,5 @@ rules:
   indentation: 4
   no-descending-specificity: null
   rule-empty-line-before: null
+  selector-id-pattern: null
+  selector-class-pattern: null
