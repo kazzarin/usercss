@@ -2,7 +2,7 @@
   "name": "usercss",
   "version": "1.0.0",
   "description": "Personal usercss",
-  "license": "Unlicense",
+  "license": "0BSD",
   "author": "Zarin",
   "private": true,
   "repository": {

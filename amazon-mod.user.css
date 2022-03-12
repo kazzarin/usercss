@@ -4,7 +4,7 @@
 @version      1.2.0
 @description  Hides promotional elements
 @author       Zarin
-@license      Unlicense
+@license      0BSD
 ==/UserStyle== */
 @-moz-document regexp("^https:\/\/www\.amazon\.[a-z]{2,3}(\.[a-z]{2,3})?\/.*$") {
     #desktop-dp-sims_session-similarities-sims-feature > .a-carousel-container {

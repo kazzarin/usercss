@@ -4,7 +4,7 @@
 @version      1.1.0
 @description  Tweaks for Kitsu
 @author       Zarin
-@license      Unlicense
+@license      0BSD
 ==/UserStyle== */
 @-moz-document regexp("^https:\/\/(.*\.)?kitsu\.io\/.*$") {
     .media--sidebar ul {
