@@ -1,11 +1,9 @@
 /* ==UserStyle==
 @name         SoundCloud Mod
-@namespace    https://github.com/synthtech
+@namespace    https://github.com
 @version      2.0.0
 @description  Hides undesireable elements
-@author       synthtech (https://github.com/synthtech)
-@homepageURL  https://github.com/synthtech/usercss
-@supportURL   https://github.com/synthtech/usercss/issues
+@author       Zarin
 @license      Unlicense
 ==/UserStyle== */
 @-moz-document url-prefix("https://soundcloud.com/") {

@@ -1,11 +1,9 @@
 /* ==UserStyle==
 @name         Kitsu Mod
-@namespace    https://github.com/synthtech
+@namespace    https://github.com
 @version      1.1.0
 @description  Tweaks for Kitsu
-@author       synthtech (https://github.com/synthtech)
-@homepageURL  https://github.com/synthtech/usercss
-@supportURL   https://github.com/synthtech/usercss/issues
+@author       Zarin
 @license      Unlicense
 ==/UserStyle== */
 @-moz-document regexp("^https:\/\/(.*\.)?kitsu\.io\/.*$") {

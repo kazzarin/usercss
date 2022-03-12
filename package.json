@@ -3,18 +3,23 @@
   "version": "1.0.0",
   "description": "Personal usercss",
   "license": "Unlicense",
+  "author": "Zarin",
   "private": true,
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/synthtech/usercss.git"
+    "url": "git+https://github.com/kazzarin/usercss.git"
   },
-  "homepage": "https://github.com/synthtech/usercss",
+  "homepage": "https://github.com/kazzarin/usercss",
   "scripts": {
     "test": "stylelint \"**/*.css\""
   },
   "devDependencies": {
-    "postcss-less": "^5.0.0",
-    "stylelint": "^14.1.0",
-    "stylelint-config-standard": "^24.0.0"
+    "postcss": "^8.4.8",
+    "postcss-less": "^6.0.0",
+    "stylelint": "^14.5.3",
+    "stylelint-config-standard": "^25.0.0"
+  },
+  "peerDependencies": {
+    "postcss": "^8.4.8"
   }
 }
