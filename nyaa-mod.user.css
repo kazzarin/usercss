@@ -1,35 +1,40 @@
 /* ==UserStyle==
 @name         Nyaa Mod
 @namespace    https://github.com
-@version      1.0.2
-@description  Dark mode adjustments
+@version      2.0.0
+@description  Tweaks dark mode using Tomorrow Night color scheme
 @author       Zarin
 @license      0BSD
 ==/UserStyle== */
 @-moz-document domain("nyaa.si") {
-    body.dark a {
-        color: #81a2be !important;
-        text-decoration: none;
+    a:not([title="Trusted"]),
+    body.dark table.torrent-list tbody .comments {
+        color: #81a2be;
     }
-    body.dark a:hover {
-        color: #5f89ac !important;
+    a:hover:not([title="Trusted"]) {
+        color: #5f89ac;
     }
-    body.dark table a:visited {
-        color: #456887 !important;
+    body.dark .torrent-list tbody tr td a:visited {
+        color: #456887;
     }
-    body.dark [style="color: green;"] {
+    body.dark .panel-body .col-md-5 span[style="color: green;"] {
         color: #b5bd68 !important;
-        font-weight: bold;
     }
-    body.dark [style="color: red;"] {
+    body.dark .panel-body .col-md-5 span[style="color: red;"] {
         color: #c66 !important;
-        font-weight: bold;
+    }
+    table.torrent-list td:nth-child(6),
+    body.dark table.torrent-list > tbody > tr.success > td:nth-child(6),
+    body.dark table.torrent-list > tbody > tr.danger > td:nth-child(6) {
+        color: #b5bd68;
+    }
+    table.torrent-list td:nth-child(7),
+    body.dark table.torrent-list > tbody > tr.success > td:nth-child(7),
+    body.dark table.torrent-list > tbody > tr.danger > td:nth-child(7) {
+        color: #c66;
     }
     body.dark .table-hover > tbody > tr:hover {
         background-color: inherit;
-    }
-    body > .container > .alert {
-        display: none;
     }
     body.dark .btn-primary {
         background-color: #81a2be;
@@ -45,27 +50,20 @@
         border-color: #5f89ac;
         box-shadow: inset 0 1px 1px rgba(0 0 0 / 7.5%), 0 0 8px rgba(95 137 172 / 60%);
     }
-    body > .container {
-        margin-top: 71px;
-    }
     body > .navbar {
-        position: fixed;
-        width: 100%;
+        position: sticky;
         top: 0;
-    }
-    body > .container > .servers-cost-money1 {
-        display: none;
     }
 }
 @-moz-document domain("sukebei.nyaa.si") {
-    body.dark a {
-        color: #c66 !important;
+    a:not([title="Trusted"]) {
+        color: #c66;
     }
-    body.dark a:hover {
-        color: #c82829 !important;
+    a:hover:not([title="Trusted"]) {
+        color: #c82829;
     }
-    body.dark table a:visited {
-        color: #933 !important;
+    body.dark .torrent-list tbody tr td a:visited {
+        color: #933;
     }
     body.dark .btn-primary {
         background-color: #c66;
