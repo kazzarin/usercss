@@ -14,9 +14,9 @@
     "test": "stylelint \"**/*.css\""
   },
   "devDependencies": {
-    "postcss": "^8.4.12",
+    "postcss": "^8.4.21",
     "postcss-less": "^6.0.0",
-    "stylelint": "^14.8.0",
+    "stylelint": "^14.16.1",
     "stylelint-config-standard": "^25.0.0"
   },
   "peerDependencies": {
