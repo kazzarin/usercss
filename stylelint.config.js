@@ -5,7 +5,6 @@ module.exports = {
         "at-rule-empty-line-before": null,
         "comment-empty-line-before": null,
         "comment-whitespace-inside": null,
-        "indentation": 4,
         "no-descending-specificity": null,
         "rule-empty-line-before": null,
         "selector-id-pattern": null,
